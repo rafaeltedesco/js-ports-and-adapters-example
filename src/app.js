@@ -8,6 +8,8 @@ const environ = process.env.ENVIRON;
 
 const app = express();
 
+app.use(express.json());
+
 let userModel;
 
 if (environ === 'docker') {
